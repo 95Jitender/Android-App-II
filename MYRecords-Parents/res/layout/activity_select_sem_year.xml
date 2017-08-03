@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1f56af"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ViewAttendance" >
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/listView1"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignRight="@+id/listView1"
+        android:layout_alignTop="@+id/textView1"
+        android:gravity="center"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:paddingBottom="10dp"
+        android:text="Select"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#fff"
+        android:textSize="22sp" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:divider="@drawable/divider2"
+        android:drawSelectorOnTop="false"
+        android:listSelector="#1f56af"
+        android:overScrollMode="never"
+        android:scrollbarSize="10dp"
+        android:scrollbarThumbVertical="@drawable/scrollbarvertical2" >
+    </ListView>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/listView1"
+        android:layout_below="@+id/textView1"
+        android:background="#fff"
+        android:paddingTop="5dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/listView1"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_marginBottom="5dp"
+        android:text="Semister or Year"
+        android:textColor="#fff" />
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myrecords_parents"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/myrecords_parentslogo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.myrecords_parents.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.myrecords_parents.SelectSemYear"
+            android:label="@string/title_activity_select_sem_year" >
+        </activity>
+        <activity
+            android:name="com.example.myrecords_parents.SplashActivity"
+            android:label="@string/title_activity_splash" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.myrecords_parents.StudentInfo"
+            android:label="@string/title_activity_student_info" >
+        </activity>
+        <activity
+            android:name="com.example.myrecords_parents.SubjectInfo"
+            android:label="@string/title_activity_subject_info" >
+        </activity>
+        <activity
+            android:name="com.example.myrecords_parents.MarksInfo"
+            android:label="@string/title_activity_marks_info" >
+        </activity>
+        <activity
+            android:name="com.example.myrecords_parents.ServerURL"
+            android:label="@string/title_activity_server_url" >
+        </activity>
+    </application>
+
+</manifest>
